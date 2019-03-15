@@ -97,6 +97,7 @@ html{
 }
 
 body{
+    width: 100%;
   font-size: 1.6rem; /*루트를 기준으로.. 10px * 1.6 */
   background-color: #ffffff;
   line-height: 1.15; /* 한 줄의 높이*/
@@ -147,6 +148,7 @@ nav a{
 
 .intro{
   /* background-image: linear-gradient(to left, #ffffff 0%, #fad0c4 100%); */
+    width: 100%;
   background: #ffffff;
   padding: 3.5em 2em;
 }
@@ -174,21 +176,20 @@ nav a{
 
 .content > h2{
   text-decoration-line: underline;
-  padding: 3em;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 100px 0;
  
   text-align: center;
   /* background: purple; */
 }
 .letter{
   letter-spacing: 1.3em;
+    line-height: 28px;
+    
 }
 /* ---------------- 이미지 ------------------------ */
 
 .thumbnail{
-  background: yellow;
-  width: 
+  background: yellow; 
 }
 
 
@@ -208,8 +209,6 @@ nav a{
 
 .portfolio{
   background: pink;
-  margin-top: 3em;
-  margin-bottom: 3em;
   background: #ffffff;
   /* transition: transform 0.2s, box-shadow 0.4s;  */
   transition: all 0.3s;
@@ -237,7 +236,7 @@ nav a{
 
 .content{
   background: #efefef;
-  padding: 4em 0 2em;
+  padding-bottom: 20px;
 }
 
 .copyright{
@@ -271,4 +270,37 @@ footer li:hover{
 footer li{
   padding: 0.2em 1em;
 
+}
+
+
+@media(max-width: 720px){
+   
+    .hello{
+        font-size: 9vw;
+    }
+    
+    .this{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .lorem{
+        font-size: 14px;
+        width: 90%;
+/*        margin: 0 auto;*/
+    }
+    
+    .portfolio{
+        width: 100%;
+    }
+    .portfolio figure {
+        width:100%;
+    }
+    
+    .portfolio a{
+        display: block;
+    }
+    .portfolio div {
+        width: 100%;
+    }
 }

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+/* 스타일 초기화 (Reset CSS) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header nav a:hover{
+  box-shadow: 0 1px 0 0  rgba(88, 39, 39, 0.4);
+}
+
+.home:hover{
+  box-shadow: 0 1px 0 0  rgba(75, 36, 36, 0.4);
+}
+
+header{
+  background: #ffffff;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1.5em 30px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(75, 36, 36, 0.2);
+
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+body, h1, h2, ul, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+
+body{
+  background-color: pink;
+  text-align: center;
+}
+
+.cover {
+  background-image: url(images/image1.jpg);
+  color: aliceblue;
+  padding-top: 20%;
+  padding-bottom: 10%;
+  background-size: cover;
+  background-position: top;
+  transition: padding 0.3s;
+}
+
+.cover-title {
+  font-size: 20vw;
+  font-weight: normal;
+  font-family: 'Kaushan Script', cursive;
+  line-height: 1;
+  font-style: italic;
+  transition: font-size 0.3s;
+}
+
+.cover-title span {
+  font-family: 'arial';
+  font-size: 0.3em;
+  display: block;
+  text-indent: 1em;
+}
+.wrapper{
+  padding: 0 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.timeline-item{
+  margin-top: 60px;
+}
+
+.card{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.card-icon{
+  width: 100px;
+  height: auto;
+  vertical-align: top;
+  margin-top: -60px;
+}
+
+.card-title{
+  font-size: 20vw;
+  color: royalblue;
+  font-family: 'impact';
+  line-height: 1;
+  margin: 20px;
+}
+
+.card-def{
+  margin: 20px;
+}
+
+.card-def dt{
+  font-size: 25px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.card-def span{
+  color : pink;
+  display: block;
+  font-size: 0.7em;
+}
+
+@media(min-width: 720px){
+   
+    .cover{
+  padding-top: 10%;
+  padding-bottom: 5%;
+    }
+    
+    .cover-title{
+        font-size: 15vw;
+    }
+    
+    .card-title{
+        font-size: 10vw;
+    }
+
+     .timeline-item{
+        width: 50%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    
+    .timeline-item:nth-child(even){
+/*        border: 10px solid red;*/
+        margin-left: auto;
+        margin-top: -150px;
+        margin-bottom: -200px;
+    }
+    
+    .header{
+        
+    }
+    
+}
+
+.timeline{
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.timeline:after{
+    content: '  ';
+    background-color: aqua;
+    width: 6px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    position: absolute;
+    margin-left: -3px;
+}
+
+
+
+
+
